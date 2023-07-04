@@ -23,10 +23,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   final screens = [
     HomePage(),
-    LeaveRequestScreen(),
+    NotificationScreen(),
     AttendanceScreen(),
     ApprovalScreen(),
-    OvertimeScreen(),
+    ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {
