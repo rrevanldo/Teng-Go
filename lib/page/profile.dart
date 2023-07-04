@@ -13,7 +13,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_back_ios_new_rounded),
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon:
+                  Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white)),
           title: Text('Profile'),
           backgroundColor: fromCssColor('#77CA91'),
         ),
