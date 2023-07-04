@@ -46,6 +46,7 @@ dependencies:
   rounded_background_text: ^0.3.0
   table_calendar: ^3.0.9
   select_form_field: ^2.2.0
+  roundcheckbox: ^2.0.5
 
 
 dev_dependencies:
