@@ -25,7 +25,12 @@ class _OvertimeScreenState extends State<OvertimeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_back_ios_new_rounded),
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon:
+                  Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white)),
           title: Text('Overtime'),
           backgroundColor: fromCssColor('#77CA91'),
         ),
@@ -185,7 +190,12 @@ class _Overtime2State extends State<Overtime2> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          leading: Icon(Icons.arrow_back_ios_new_rounded),
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              icon:
+                  Icon(Icons.arrow_back_ios_new_rounded, color: Colors.white)),
           title: Text('Overtime'),
           backgroundColor: fromCssColor('#77CA91'),
         ),
