@@ -104,7 +104,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
               color: Colors.white,
             ),
             onPressed: () {
-              // Navigator.pop(context);
+              Navigator.pop(context);
             },
           ),
           title: Text('Attendance'),
@@ -411,7 +411,7 @@ class _Attendance1State extends State<Attendance1> {
               color: Colors.white,
             ),
             onPressed: () {
-              // Navigator.pop(context);
+              Navigator.pop(context);
             },
           ),
           title: Text('Attendance'),
@@ -671,7 +671,7 @@ class _Attendance2State extends State<Attendance2> {
               color: Colors.white,
             ),
             onPressed: () {
-              // Navigator.pop(context);
+              Navigator.pop(context);
             },
           ),
           title: Text('Attendance'),
@@ -931,7 +931,7 @@ class _Attendance3State extends State<Attendance3> {
               color: Colors.white,
             ),
             onPressed: () {
-              // Navigator.pop(context);
+              Navigator.pop(context);
             },
           ),
           title: Text('Attendance'),
@@ -1196,7 +1196,7 @@ class _Attendance4State extends State<Attendance4> {
               color: Colors.white,
             ),
             onPressed: () {
-              // Navigator.pop(context);
+              Navigator.pop(context);
             },
           ),
           title: Text('Attendance'),
@@ -1457,7 +1457,7 @@ class _Attendance5State extends State<Attendance5> {
               color: Colors.white,
             ),
             onPressed: () {
-              // Navigator.pop(context);
+              Navigator.pop(context);
             },
           ),
           title: Text('Attendance'),
@@ -1759,7 +1759,7 @@ class _Attendance5State extends State<Attendance5> {
                                           options: const AuthenticationOptions(
                                               biometricOnly: true),
                                           localizedReason:
-                                              'Masukan sidik jari untuk tetap login',
+                                              'Masukan sidik jari untuk tetap Clock-In',
                                           authMessages: [
                                         AndroidAuthMessages(
                                           cancelButton: 'Batalkan',
