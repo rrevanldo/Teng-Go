@@ -89,6 +89,7 @@ class _HomePageState extends State<HomePage> {
                                             color: Colors.black,
                                             size: 35,
                                           )),
+                                          // ImageIcon(AssetImage('assets/images/pending.png'))
                                     ),
                                   ],
                                 ),
@@ -516,131 +517,103 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                       ],
                                     ),
-                                    // child: Row(
-                                    //   children: [
-                                    //     SizedBox(width: 15),
-                                    // Column(
-                                    //   crossAxisAlignment:
-                                    //       CrossAxisAlignment.start,
-                                    //   children: [
-                                    //     SizedBox(height: 10),
-                                    //     Text(
-                                    //       "Baby Born",
-                                    //       style: GoogleFonts.poppins(
-                                    //         color: Colors.white,
-                                    //         fontWeight: FontWeight.w500,
-                                    //         fontSize: 15,
-                                    //       ),
-                                    //     ),
-                                    //     SizedBox(height: 5),
-                                    //     Text(
-                                    //       "Welcome a baby boy to Our Family",
-                                    //       style: GoogleFonts.poppins(
-                                    //         color: Colors.white,
-                                    //         fontWeight: FontWeight.w500,
-                                    //         fontSize: 11,
-                                    //       ),
-                                    //     ),
-                                    //     SizedBox(height: 10),
-                                    //     Text(
-                                    //       "Love,",
-                                    //       style: GoogleFonts.poppins(
-                                    //         color: Colors.white,
-                                    //         fontWeight: FontWeight.w500,
-                                    //         fontSize: 11,
-                                    //       ),
-                                    //     ),
-                                    //     Text(
-                                    //       "Douglas and Martha",
-                                    //       style: GoogleFonts.poppins(
-                                    //         color: Colors.white,
-                                    //         fontWeight: FontWeight.w500,
-                                    //         fontSize: 11,
-                                    //       ),
-                                    //     ),
-                                    //   ],
-                                    // ),
-                                    //     SizedBox(width: 10),
-                                    //     Container(
-                                    //       width: 100,
-                                    //       height: 100,
-                                    //       decoration: BoxDecoration(
-                                    //         color: Colors.white
-                                    //             .withOpacity(0.5),
-                                    //         borderRadius:
-                                    //             BorderRadius.circular(15.0),
-                                    //       ),
-                                    //       child: ClipRRect(
-                                    //         borderRadius:
-                                    //             BorderRadius.circular(15.0),
-                                    //         child: Image.asset(
-                                    //           'assets/images/baby.png',
-                                    //           fit: BoxFit
-                                    //               .cover, // Ensure the image fits within the container
-                                    //         ),
-                                    //       ),
-                                    //     ),
-                                    //   ],
-                                    // ),
+                                  ),
+                                  SizedBox(
+                                    width: 10,
                                   ),
                                   Container(
-                                      width: 350,
-                                      height: 125,
-                                      decoration: BoxDecoration(
-                                        borderRadius: const BorderRadius.only(
-                                          bottomLeft: Radius.circular(50),
-                                          bottomRight: Radius.circular(50),
+                                    width: 360,
+                                    height: 125,
+                                    decoration: BoxDecoration(
+                                      color: Colors.black,
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    child: Stack(
+                                      children: [
+                                        // Align(
+                                        //   alignment: Alignment.centerRight,
+                                        //   child: Container(
+                                        //     height: 125,
+                                        //     width: 170,
+                                        //     decoration: BoxDecoration(
+                                        //       borderRadius: BorderRadius.only(
+                                        //         topRight: Radius.circular(
+                                        //           12,
+                                        //         ),
+                                        //         bottomRight:
+                                        //             Radius.circular(12),
+                                        //       ),
+                                        //       image: DecorationImage(
+                                        //         image: AssetImage(
+                                        //             "assets/images/baby.png"),
+                                        //         fit: BoxFit.cover,
+                                        //       ),
+                                        //     ),
+                                        //     child: Align(
+                                        //       alignment: Alignment.centerLeft,
+                                        //       child: Container(
+                                        //         width: 100,
+                                        //         decoration:
+                                        //             BoxDecoration(boxShadow: [
+                                        //           BoxShadow(
+                                        //             color: Colors.white,
+                                        //             blurRadius: 100,
+                                        //             spreadRadius: 10,
+                                        //             offset: Offset(0, 0),
+                                        //           ),
+                                        //         ]),
+                                        //       ),
+                                        //     ),
+                                        //   ),
+                                        // ),
+                                        Padding(
+                                          padding: const EdgeInsets.only(
+                                              left: 10, top: 5),
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              SizedBox(height: 10),
+                                              Text(
+                                                "Our deepest condolences",
+                                                style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 15,
+                                                ),
+                                              ),
+                                              SizedBox(height: 5),
+                                              Text(
+                                                "May the love of those around you...",
+                                                style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 11,
+                                                ),
+                                              ),
+                                              SizedBox(height: 15),
+                                              // Text(
+                                              //   "Love,",
+                                              //   style: GoogleFonts.poppins(
+                                              //     color: Colors.white,
+                                              //     fontWeight: FontWeight.w500,
+                                              //     fontSize: 11,
+                                              //   ),
+                                              // ),
+                                              Text(
+                                                "Management",
+                                                style: GoogleFonts.poppins(
+                                                  color: Colors.white,
+                                                  fontWeight: FontWeight.w500,
+                                                  fontSize: 11,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
                                         ),
-                                      ),
-                                      child: Card(
-                                        color: fromCssColor('#0E0B03'),
-                                        shape: RoundedRectangleBorder(
-                                          borderRadius:
-                                              BorderRadius.circular(15.0),
-                                        ),
-                                        child: Row(
-                                          children: [
-                                            SizedBox(
-                                              width: 15,
-                                            ),
-                                            Column(
-                                              crossAxisAlignment:
-                                                  CrossAxisAlignment.start,
-                                              children: [
-                                                SizedBox(
-                                                  height: 10,
-                                                ),
-                                                Text(
-                                                  "Our deepest condolences",
-                                                  style: GoogleFonts.poppins(
-                                                      color: Colors.white,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                      fontSize: 15),
-                                                ),
-                                                SizedBox(height: 5),
-                                                Text(
-                                                  "May the love of those around you...",
-                                                  style: GoogleFonts.poppins(
-                                                      color: Colors.white,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                      fontSize: 11),
-                                                ),
-                                                SizedBox(height: 15),
-                                                Text(
-                                                  "Management",
-                                                  style: GoogleFonts.poppins(
-                                                      color: Colors.white,
-                                                      fontWeight:
-                                                          FontWeight.w500,
-                                                      fontSize: 11),
-                                                ),
-                                              ],
-                                            ),
-                                          ],
-                                        ),
-                                      )),
+                                      ],
+                                    ),
+                                  ),
                                 ],
                               ),
                             ],
@@ -683,7 +656,7 @@ class _HomePageState extends State<HomePage> {
                                             borderRadius:
                                                 BorderRadius.circular(10),
                                             child: Image.asset(
-                                              'assets/images/natal.png',
+                                              'assets/images/andy.png',
                                               fit: BoxFit.cover,
                                             ),
                                           ),
